@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "850845826578",
+    "project_id": "spaceappnotificacao-b8728",
+    "storage_bucket": "spaceappnotificacao-b8728.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850845826578:android:b3f5ea141b988089a7e2cb",
+        "android_client_info": {
+          "package_name": "com.spaceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850845826578-q16ko73g6ed3ca92h9nc66bqehnrgf3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiM3FvvXqU51FN7wloNggiUP3pe5j6Qpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850845826578-q16ko73g6ed3ca92h9nc66bqehnrgf3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
