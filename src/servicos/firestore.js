@@ -1,11 +1,18 @@
 import firestore from '@react-native-firebase/firestore';
 
-export async function salvarPost(data){
+export async function salvarDados(nomeColecao, data){
   try {
-    const result = await firestore().collection('posts').add(data)
+    if(nomeColecao == 'tokens'){
+      const tokens = await firestore().collection('tokens').where('userId', '==', data.userId).get()
+      if(tokens.docs.lngth > 0){
+        await firestore().collection('tokens').doc(tokens.docs[0].id).update(data)
+        return tokens.docs[0].id
+      }
+    }
+    const result = await firestore().collection(nomeColecao).add(data)
     return result.id
   } catch(error){
-    console.log('Erro add post:', error)
+    console.log('Erro ao salvar:', error)
     return 'erro'
   }
 }
